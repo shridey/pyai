@@ -9,7 +9,7 @@ samples = [[0, 0], [0, 1], [1, 0], [1, 1]]
 labels_and = [0, 0, 0, 1]
 
 '''
-Calculating weights for AND Gate:
+Calculating weights for AND Logic Gate:
 
 x1 | x2 | x1 AND x2
 0  | 0  | 0
@@ -49,5 +49,5 @@ Let b = -1.5, w1 = 1, w2 = 1
 '''
 artificial_neuron = ArtificialNeuron(2, [1, 1], -1.5)
 
-print("Prediction of AND GATE by Artificial Neuron:")
+print("Prediction of AND Logic Gate by Artificial Neuron:")
 artificial_neuron.test(samples, labels_and)
