@@ -9,7 +9,7 @@ samples = [[0, 0], [0, 1], [1, 0], [1, 1]]
 labels_xor = [0, 1, 1, 0]
 
 '''
-Calculating weights for XOR Gate
+Calculating weights for XOR Logic Gate
 
 x1 | x2 | x1 XOR x2
 0  | 0  | 0
@@ -17,7 +17,7 @@ x1 | x2 | x1 XOR x2
 1  | 0  | 1
 1  | 1  | 0
 
-A single Perceptron could not learn XOR Gate, here's why:
+A single Perceptron could not learn XOR Logic Gate, here's why:
 
 Perceptron Activation Function: w1.x1 + w2.x2 + b >= 0
 It means that the Perceptron will output 1 only when
@@ -193,7 +193,7 @@ p3_output_sample_2 = p3.predict([p1_output_sample_2, p2_output_sample_2])
 p3_output_sample_3 = p3.predict([p1_output_sample_3, p2_output_sample_3])
 p3_output_sample_4 = p3.predict([p1_output_sample_4, p2_output_sample_4])
 
-print("XOR Gate Prediction:")
+print("XOR Logic Gate Prediction by Multiple Perceptrons:")
 print(f"Sample: {samples[0]} | Label: {labels_xor[0]} | Prediction: {p3_output_sample_1}")
 print(f"Sample: {samples[1]} | Label: {labels_xor[1]} | Prediction: {p3_output_sample_2}")
 print(f"Sample: {samples[2]} | Label: {labels_xor[2]} | Prediction: {p3_output_sample_3}")
