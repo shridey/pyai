@@ -1,7 +1,7 @@
 from perceptron_1957.perceptron import Perceptron
 
 '''
-Demonstration of Perceptron predicting AND Gate
+Demonstration of Perceptron predicting AND Logic Gate
 using learned weights
 '''
 
@@ -10,7 +10,7 @@ labels_and = [0, 0, 0, 1]
 
 perceptron = Perceptron(2, 0.1, 10)
 
-print("Testing the AND GATE Prediction Accuracy of Perceptron before training:")
+print("Testing the AND Logic Gate Prediction Accuracy of Perceptron before training:")
 perceptron.test(samples, labels_and)
 
 print()
@@ -21,5 +21,5 @@ perceptron.train(samples, labels_and)
 
 print()
 
-print("Testing the AND GATE Prediction Accuracy of Perceptron after training:")
+print("Testing the AND Logic Gate Prediction Accuracy of Perceptron after training:")
 perceptron.test(samples, labels_and)
